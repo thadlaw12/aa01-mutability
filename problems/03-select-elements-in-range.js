@@ -7,7 +7,9 @@ indices within the range of indices defined by the starting and ending numbers,
 inclusive.
 */
 
-// Your code here 
+function selectElementsInRange(arr, start, end){
+   return arr.slice(start, end + 1)
+}
 
 
 // console.log(selectElementsInRange([1, 2, 3], 0, 1));        // [1, 2]

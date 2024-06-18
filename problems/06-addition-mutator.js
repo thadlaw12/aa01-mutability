@@ -4,7 +4,11 @@ arguments. The function should mutate the input array such that every element
 has the given number added to it.
 */
 
-// Your code here 
+function additionMutator(arr, num){
+    for(let i = 0; i <= arr.length - 1; i++){
+        arr[i] += num
+    } return arr;
+} 
 
 
 // let nums1 = [3, 7, 1, 2];

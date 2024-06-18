@@ -3,7 +3,12 @@ Define a function doubler that takes an array of numbers and returns the same
 array but every element of the array is multiplied by 2.
 */
 
-// Your code here 
+function doubler(arr){
+    for(let i = 0; i <= arr.length - 1; i++){
+        console.log(arr[i])
+        arr[i] *= 2
+    } return arr;
+}
 
 // let nums1 = [1, 2, 3, 4];
 // let doubled1 = doubler(nums1)
