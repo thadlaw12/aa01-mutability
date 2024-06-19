@@ -6,8 +6,20 @@ contains "length" elements. The first element of the sequence is always the
 element of the sequence.
 */
 
-// Your code here 
-
+function doubleSequence(base, length){
+    let arr = [] 
+    if(length === 0){
+        return arr;
+    }  
+    for(let i = 0; i <= length - 1; i++){
+        console.log(arr)
+         if(i === 0){
+            arr.push(base)
+        } else{
+        arr.push(arr[i - 1] * 2)
+        } 
+    } return arr;
+}
 // console.log(doubleSequence(7, 3));  // [7, 14, 28]
 // console.log(doubleSequence(3, 5));  // [3, 6, 12, 24, 48]
 // console.log(doubleSequence(5, 3));  // [5, 10, 20]

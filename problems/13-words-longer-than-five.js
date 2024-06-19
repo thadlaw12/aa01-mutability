@@ -4,7 +4,14 @@ function should return a NEW array containing only the words that are longer
 than 5 characters.
 */
 
-// Your code here 
+function wordsLongerThan5(arr){
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].length > 5){
+            newArr.push(arr[i])
+        }
+    } return newArr;
+}
 
 
 // let words1 = ['bike', 'skateboard','scooter', 'moped'];

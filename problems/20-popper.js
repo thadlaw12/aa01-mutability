@@ -5,12 +5,16 @@ original array. The function should return a new array containing the elements
 that were removed.
 */
 
-// Your code here 
+function popper(arr, num){
+    let popped = []
+    for(let i = 0; i < num; i++){
+    popped.push(arr.pop())    
+    } return popped;
+}
 
-
-// let arr1 = ['a', 'b', 'c', 'd', 'e'];
-// console.log(popper(arr1, 2)); // [ 'e', 'd' ]
-// console.log(arr1); // [ 'a', 'b', 'c' ]
+let arr1 = ['a', 'b', 'c', 'd', 'e'];
+console.log(popper(arr1, 2)); // [ 'e', 'd' ]
+console.log(arr1); // [ 'a', 'b', 'c' ]
 
 // let arr2 = ['kale', 'spinach', 'collard greens', 'cabbage'];
 // console.log(popper(arr2, 1)); // [ 'cabbage' ]

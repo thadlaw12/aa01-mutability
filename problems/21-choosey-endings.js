@@ -5,7 +5,18 @@ that end in the given suffix. If the value passed in is not an array, return an
 empty array.
 */
 
-// Your code here 
+function chooseyEndings(arr, str){
+    let newArr = []
+    let empT = []
+    for(let i = 0; i < arr.length; i++){
+        if(!Array.isArray(arr)){
+            return empT;
+        }
+        if(arr[i].endsWith(str)){
+            newArr.push(arr[i])
+        }
+    } return newArr;
+} 
 
 
 // console.log(chooseyEndings(['family', 'hound', 'catalyst','fly', 'timidly', 'bond'], 'ly'));

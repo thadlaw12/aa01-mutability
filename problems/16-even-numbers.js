@@ -4,7 +4,16 @@ should return an array containing all positive, even numbers that are less than
 max.
 */
 
-// Your code here 
+function evenNumbers(max){
+    let arr = [];
+    for(let i = 1; i < max; i++){
+        if(i % 2 !== 0){
+            arr.push()
+        } else if(i % 2 === 0){
+            arr.push(i);
+        }
+    } return arr;
+}
 
 
 // console.log(evenNumbers(7));  // [ 2, 4, 6 ]
